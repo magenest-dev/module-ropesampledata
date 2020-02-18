@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+<system>
+    <tab id="magenest" translate="label" sortOrder="200">
+        <label>Magenest</label>
+    </tab>
+    <section id="rope_sample_data" translate="label" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+        <class>separator-top</class>
+        <label>Rope SampleData</label>
+        <tab>magenest</tab>
+        <resource>Magenest_RopeSampleData::configuration</resource>
+        <group id="system_information" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>System Information</label>
+            <field id="upload_sample_data" translate="button_label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <frontend_model>Magenest\RopeSampleData\Block\Adminhtml\System\Config\SystemInformation</frontend_model>
+            </field>
+        </group>
+    </section>
+</system>
+</config>
+

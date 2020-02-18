@@ -1,0 +1,74 @@
+<?php
+/**
+ * Copyright © 2020 Magenest. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * rope_theme extension
+ * NOTICE OF LICENSE
+ *
+ * @category Magenest
+ * @package rope_theme
+ * @package linhphung
+ */
+/** @var $block Magenest\RopeSampleData\Block\Adminhtml\System\Config\SystemInformation
+ */
+$versions = $block->getVersionSampleData();
+$url = $block->getApplySampleDataUrl();
+?>
+
+<div>
+    <span>Magenest Sample Data For Rope Theme </span>
+    <select id="versionSelecter">
+        <option value="">---Please choose version data--</option>
+        <?php if ($versions): ?>
+            <?php foreach ($versions as $key => $value): ?>
+                <option value="<?= $key ?>"><?= 'Sample Data ' . $key ?></option>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </select>
+    <button type="button" id="btnApplyWidget">Apply</button>
+</div>
+<script>
+    require([
+        'jquery',
+        'Magento_Ui/js/modal/alert',
+        'mage/url',
+        'domReady!'
+    ], function ($, alert, url) {
+        'use strict';
+        $("#btnApplyWidget").on('click', function () {
+            var version = $("#versionSelecter").val();
+            if (version) {
+                $.ajax({
+                    url: "<?=$url?>",
+                    type: 'POST',
+                    data: {
+                        version: version,
+                        form_key:  window.FORM_KEY
+                    },
+                    dataType: "json"
+                }).done(function (response) {
+                    console.log(response);
+                    if (response.success) {
+                        alert({
+                            title: $.mage.__('Success'),
+                            content: response.message
+                        });
+                    }
+                    if (response.error) {
+                        alert({
+                            content: response.message
+                        });
+
+                    }
+                });
+
+            }else {
+                alert({
+                    content:  $.mage.__('You can choose version to apply.')
+                });
+            }
+        });
+    });
+
+</script>

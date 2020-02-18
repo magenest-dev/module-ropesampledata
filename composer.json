@@ -1,0 +1,20 @@
+{
+  "name": "magenest/module-ropesampledata",
+  "description": "RopeSampleData extension by Magenest",
+  "type": "magento2-module",
+  "version": "2.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "require": {
+    "magenest/core": "*",
+    "magenest/module-widget": "^1.0.1"
+  },
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Magenest\\RopeSampleData\\": ""
+    }
+  }
+}
