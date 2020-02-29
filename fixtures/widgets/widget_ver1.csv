@@ -1,0 +1,4 @@
+block_identifier,type_code,theme_path,title,page_group,group_data,sort_order
+footer-top,cms_static_block,frontend/Magenest/rope,footer top,all_pages,"{""block"":""footer_top_content"",""layout_handle"":""default""}",1
+footer-top2,cms_static_block,frontend/Magenest/rope,footer top2,all_pages,"{""block"":""footer_columns_content"",""layout_handle"":""default""}",2
+link-home2,cms_static_block,frontend/Magenest/rope,link-home2,all_pages,"{""block"":""top.container"",""layout_handle"":""default""}",0
