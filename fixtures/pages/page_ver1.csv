@@ -18,12 +18,13 @@ Home Page Rope Theme V1,1column,,,rope-home-v1,,"<div class=""block-slide slide-
 </div>
 </div>
 </div>
-<p>{{widget type=""Magenest\Widget\Block\Product\ProductsList"" title=""New arrival"" only_show_new=""1"" products_count=""10"" template=""Magenest_Widget::category/widget/content.phtml"" category_ids=""3, 8, 4""}}</p>
+<p>{{widget type="Magento\Catalog\Block\Product\Widget\NewWidget" display_type="new_products" products_count="10" template="Magento_Catalog::product/widget/new/content/new_grid.phtml"}}</p>
 <div class=""banner-sale"" style=""background-image: url('{{view url='images/theme/banner/sale.jpg'}}');"">
 <div class=""container""><span class=""title"">UP TO 30%</span>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi</p>
 </div>
 </div>
+<p>{{widget type="Magenest\Widget\Block\Product\Widget\HotSalesWidget" title="hot sale" products_count="10" template="Magenest_Widget::product/widget/sales/content/hot_sales_grid.phtml"}}</p>
 <div class=""block-client-say"">
 <div class=""container"" style=""background-image: url('{{view url='images/theme/banner/bg-client-say.png'}}');"">
 <div class=""block-title"">Client Say</div>
@@ -39,7 +40,7 @@ Home Page Rope Theme V1,1column,,,rope-home-v1,,"<div class=""block-slide slide-
 </div>
 </div>
 </div>
-<div class=""block-blog-style1 owl-carousel"">{{widget type=""Magenest\Blog\Block\Post\Widget\BlogPostsWidget"" blog_displays=""4"" template=""Magenest_Blog::post/widget/blog_posts.phtml"" title=""From The Blog""}}</div>",1,0,"<!--
+",1,0,"<!--
     <referenceContainer name=""right"">
         <action method=""unsetChild""><argument name=""alias"" xsi:type=""string"">right.reports.product.viewed</argument></action>
         <action method=""unsetChild""><argument name=""alias"" xsi:type=""string"">right.reports.product.compared</argument></action>
@@ -49,6 +50,6 @@ Home Page Rope Theme V2,1column,,,rope-home-v2,,"<div class=""block-slide slide-
 <div class=""item""><a><img src=""{{view url='images/theme/slide/slide2.jpg'}}"" alt=""slide1""> </a></div>
 </div>
 <div class=""block-banner-style1""><a class=""item""><img src=""{{view url='images/theme/banner/banner2-1.jpg'}}""></a> <a class=""item""><img src=""{{view url='images/theme/banner/banner2-2.jpg'}}""></a> <a class=""item""><img src=""{{view url='images/theme/banner/banner2-3.jpg'}}""></a></div>
-<div class=""block-products style1 container"">{{widget type=""Magento\Catalog\Block\Product\Widget\NewWidget"" display_type=""new_products"" products_count=""10"" template=""product/widget/new/content/new_grid.phtml""}}</div>
+<div class=""block-products style1 container"">{{widget type="Magento\Catalog\Block\Product\Widget\NewWidget" display_type="new_products" products_count="10" template="Magento_Catalog::product/widget/new/content/new_grid.phtml"}}</div>
 <div class=""block-products style1 container"">&nbsp;</div>
-<div class=""block-blog-style2 owl-carousel"">{{widget type=""Magenest\Blog\Block\Post\Widget\BlogPostsWidget"" blog_displays=""4"" template=""Magenest_Blog::post/widget/blog_posts.phtml"" title=""From The Blog""}}</div>",1,0,
+",1,0,
