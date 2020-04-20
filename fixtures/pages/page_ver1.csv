@@ -18,25 +18,27 @@ Home Page Rope Theme V1,1column,,,rope-home-v1,,"<div class=""block-slide slide-
 </div>
 </div>
 </div>
-<p>
+<div
+class=""block-products style1 container"">
 {{widget
 type=""Magento\Catalog\Block\Product\Widget\NewWidget""
 display_type=""new_products""
 products_count=""10""
 template=""Magento_Catalog::product/widget/new/content/new_grid.phtml""
-}}</p>
+}}</div>
 <div class=""banner-sale"" style=""background-image: url('{{view url='images/theme/banner/sale.jpg'}}');"">
 <div class=""container""><span class=""title"">UP TO 30%</span>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi</p>
 </div>
 </div>
-<p>
+<div
+class=""block-products style1 container"">
 {{widget
 type=""Magenest\Widget\Block\Product\Widget\HotSalesWidget""
 title=""hot sale"" products_count=""10""
 template=""Magenest_Widget::product/widget/sales/content/hot_sales_grid.phtml""
 }}
-</p>
+</div>
 <div class=""block-client-say"">
 <div class=""container"" style=""background-image: url('{{view url='images/theme/banner/bg-client-say.png'}}');"">
 <div class=""block-title"">Client Say</div>
