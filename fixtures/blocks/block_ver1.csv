@@ -111,10 +111,10 @@ transition: width 0.3s;
     height: 40px;
     width: 60px;
     line-height: 36px;
-    top: 125px;
+    top: 200px;
 }
 .linkhome:nth-child(2) {
-    top: 170px;
+    top: 250px;
 }
 .linkhome:hover{
    width: 80px;
