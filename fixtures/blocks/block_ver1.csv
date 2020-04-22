@@ -77,12 +77,12 @@ link-home2,link-home2,"<div class=""linkhome""><a href=""{{store url=''}}"">Home
     border-left: none;
     right: 0;
     left: auto;
-    top: 158px;
+    top: 200px;
 -webkit-transition: width 0.3s;
 transition: width 0.3s;
 }
 .linkhome:nth-child(2){
-    top: 215px;
+    top: 250px;
 }
 .linkhome:hover{
    width: 95px;
