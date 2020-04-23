@@ -82,7 +82,7 @@ link-home2,link-home2,"<div class=""linkhome""><a href=""{{store url=''}}"">Home
 transition: width 0.3s;
 }
 .linkhome:nth-child(2){
-    top: 250px;
+    top: 260px;
 }
 .linkhome:hover{
    width: 95px;
@@ -107,14 +107,14 @@ transition: width 0.3s;
 }
 @media (max-width: 767px){
 .linkhome{
-    position: absolute;
+    position: fixed;
     height: 40px;
     width: 60px;
     line-height: 36px;
     top: 200px;
 }
 .linkhome:nth-child(2) {
-    top: 250px;
+    top: 260px;
 }
 .linkhome:hover{
    width: 80px;
