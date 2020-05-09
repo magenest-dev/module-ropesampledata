@@ -10,7 +10,7 @@ footer top2,footer-top2,"<div class=""col-md-3"">
 <div class=""block-title"">
 <h3>About Us</h3>
 </div>
-<div class=""block-content"">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make <br /><br /><br /> <img src=""{{view url='images/theme/paypal.jpg'}}"" /></div>
+<div class=""block-content"">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make <br><br><br><img src=""{{view url='images/theme/paypal.jpg'}}""></div>
 </div>
 </div>
 <div class=""col-md-3"">
@@ -20,9 +20,9 @@ footer top2,footer-top2,"<div class=""col-md-3"">
 </div>
 <div class=""block-content"">
 <ul class=""link-contact"">
-<li><i class=""fa fa-map-marker""></i> <span>5411 South Tripp Avenue Chicago, USA</span></li>
-<li><i class=""fa fa-phone""></i> <span>+1 773-767-2567 </span></li>
-<li><i class=""fa fa-envelope""></i> <span>support@magenest.com</span></li>
+<li>5411 South Tripp Avenue Chicago, USA</li>
+<li>+1 773-767-2567</li>
+<li>support@magenest.com</li>
 </ul>
 </div>
 </div>
@@ -32,17 +32,7 @@ footer top2,footer-top2,"<div class=""col-md-3"">
 <div class=""block-title"">
 <h3>INFOMATION</h3>
 </div>
-<div class=""block-content"">
-<ul class=""links"">
-<li><a href=""{{store url=""""}}page-about"">About Us</a></li>
-<li><a href=""{{store url=""""}}page-contact"">Contact Us</a></li>
-<li><a href=""#"">Delivery Information</a></li>
-<li><a href=""#"">Privacy Policy</a></li>
-<li><a href=""#"">Terms Conditions</a></li>
-<li><a href=""#"">Services</a></li>
-<li><a href=""#"">Customer service/ FAQ</a></li>
-</ul>
-</div>
+<div class=""block-content"">{{block class=""Magento\Framework\View\Element\Template"" name=""magenest_footer_information"" template=""Magenest_RopeSampleData::footer/footer_information.phtml""}}</div>
 </div>
 </div>
 <div class=""col-md-3"">
@@ -52,12 +42,12 @@ footer top2,footer-top2,"<div class=""col-md-3"">
 </div>
 <div class=""block-content"">
 <ul class=""block-instagram"">
-<li><img src=""{{view url='images/theme/instagram/instagram1.jpg'}}"" /></li>
-<li><img src=""{{view url='images/theme/instagram/instagram2.jpg'}}"" /></li>
-<li><img src=""{{view url='images/theme/instagram/instagram3.jpg'}}"" /></li>
-<li><img src=""{{view url='images/theme/instagram/instagram4.jpg'}}"" /></li>
-<li><img src=""{{view url='images/theme/instagram/instagram5.jpg'}}"" /></li>
-<li><img src=""{{view url='images/theme/instagram/instagram6.jpg'}}"" /></li>
+<li><img src=""{{view url='images/theme/instagram/instagram1.jpg'}}""></li>
+<li><img src=""{{view url='images/theme/instagram/instagram2.jpg'}}""></li>
+<li><img src=""{{view url='images/theme/instagram/instagram3.jpg'}}""></li>
+<li><img src=""{{view url='images/theme/instagram/instagram4.jpg'}}""></li>
+<li><img src=""{{view url='images/theme/instagram/instagram5.jpg'}}""></li>
+<li><img src=""{{view url='images/theme/instagram/instagram6.jpg'}}""></li>
 </ul>
 </div>
 </div>
