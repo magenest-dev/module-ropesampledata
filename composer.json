@@ -2,14 +2,14 @@
   "name": "magenest/module-ropesampledata",
   "description": "RopeSampleData extension by Magenest",
   "type": "magento2-module",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "license": [
     "OSL-3.0",
     "AFL-3.0"
   ],
   "require": {
     "magenest/core": "*",
-    "magenest/module-widget": "^1.0.1"
+    "magenest/module-widget": "^1.1.0"
   },
   "autoload": {
     "files": [ "registration.php" ],
